@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Document</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.9  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="20230508;9511054">
+	<META NAME="" CONTENT="">
+	<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+	<STYLE TYPE="text/css">
+	<!--
+		H2.cjk { font-family: "SimSun" }
+		H2.ctl { font-family: "Arial" }
+		H3.cjk { font-family: "SimSun" }
+		H3.ctl { font-family: "Arial" }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<H1><FONT COLOR="#666666"><FONT FACE="Montserrat">Introduction</FONT></FONT></H1>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">Overview</SPAN></FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">Installation</SPAN></FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">Quick
+	start</SPAN></FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">The
+	Why</SPAN></FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">Tree-Shaking</SPAN></FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">Compatibility</SPAN></FONT></FONT></P>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">Importing
+		Common JS</SPAN></FONT></FONT></P>
+		<LI><P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#666666"><FONT FACE="Montserrat"><SPAN STYLE="background: transparent">Publishing
+		ES Modules</SPAN></FONT></FONT></P>
+	</UL>
+</UL>
+<P STYLE="margin-bottom: 0cm; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<H2 CLASS="western"><FONT COLOR="#666666"><FONT FACE="Montserrat">Overview</FONT></FONT></H2>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">Rollup
+is a module bundler for JavaScript which compiles small pieces of
+code into something larger and more complex, such as a library or
+application. It uses the new standardized format for code modules
+included in the ES6 revision of JavaScript, instead of previous
+idiosyncratic solutions such as CommonJS and AMD. ES modules let you
+freely and seamlessly combine the most useful individual functions
+from your favorite libraries. This will eventually be possible
+natively everywhere, but Rollup lets you do it today.</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<H2 CLASS="western"><FONT COLOR="#666666"><FONT FACE="Montserrat">Installation</FONT></FONT></H2>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><FONT COLOR="#eeeeee"><FONT FACE="Mono"><SPAN STYLE="background: #666666"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="font-weight: normal">npm
+install --global rollup</SPAN></FONT></SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">This
+will make Rollup available as a global command line tool. You can
+also install it locally, see [Installing Rollup
+locally](<I>https://rollupjs.org/tutorial/#installing-rollup-locally</I>).</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<H2 CLASS="western"><FONT COLOR="#666666"><FONT FACE="Montserrat">##
+Quick Start</FONT></FONT></H2>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">Rollup
+can be used either through a [command line
+interface](<I>https://rollupjs.org/command-line-interface/</I>) with
+an optional configuration file, or else through its [JavaScript
+API](<I>https://rollupjs.org/javascript-api/</I>). Run <I>`rollup
+--help`</I> to see the available options and parameters.</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent"><I>&gt;
+See
+[</I><I>rollup-starter-lib</I><I>](https://github.com/rollup/rollup-starter-lib)
+and
+[</I><I>rollup-starter-app</I><I>](https://github.com/rollup/rollup-starter-app)
+to see example library and application projects using Rollup</I></SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">These
+commands assume the entry point to your application is named
+<I>`main.js`</I>, and that you'd like all imports compiled into a
+single file named <I>`bundle.js`</I>.</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">For
+browsers:</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#eeeeee"><FONT FACE="Mono"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: #666666">compile
+to a &lt;script&gt; containing a self-executing function ('iife')</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#eeeeee"><FONT FACE="Mono"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: #666666">rollup
+main.js --file bundle.js --format iife</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">For
+Node.js:</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#eeeeee"><FONT FACE="Mono"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: #666666">#
+compile to a CommonJS module ('cjs')</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#eeeeee"><FONT FACE="Mono"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: #666666">rollup
+main.js --file bundle.js --format cjs</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">For
+both browsers and Node.js:</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#eeeeee"><FONT FACE="Mono"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: #666666">UMD
+format requires a bundle name</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#eeeeee"><FONT FACE="Mono"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: #666666">rollup
+main.js --file bundle.js --format umd --name &quot;myBundle&quot;</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<H2 CLASS="western"><FONT COLOR="#666666"><FONT FACE="Montserrat">##
+The Why</FONT></FONT></H2>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">Developing
+software is usually easier if you break your project into smaller
+separate pieces, since that often removes unexpected interactions and
+dramatically reduces the complexity of the problems you'll need to
+solve, and simply writing smaller projects in the first place [isn't
+necessarily the
+answer](<I>https://medium.com/@Rich_Harris/small-modules-it-s-not-quite-that-simple-3ca532d65de4</I>).
+Unfortunately, JavaScript has not historically included this
+capability as a core feature in the language.</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">This
+finally changed with the ES6 revision of JavaScript, which includes a
+syntax for importing and exporting functions and data so they can be
+shared between separate scripts. The specification is now fixed, but
+it is only implemented in modern browsers and not finalised in
+Node.js. Rollup allows you to write your code using the new module
+system, and will then compile it back down to existing supported
+formats such as CommonJS modules, AMD modules, and IIFE-style
+scripts. This means that you get to write future-proof code, and you
+also get the tremendous benefits of&hellip;</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm; line-height: 0.5cm">
+<BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<H2 CLASS="western" STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat">Tree-Shaking</FONT></FONT></H2>
+<H2 CLASS="western"><FONT COLOR="#666666"><FONT FACE="Montserrat">Compatibility</FONT></FONT></H2>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<H3 CLASS="western"><FONT COLOR="#666666"><FONT FACE="Montserrat">Importing
+CommonJS</FONT></FONT></H3>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">Rollup
+can import existing CommonJS modules [through a
+plugin](<I>https://github.com/rollup/plugins/tree/master/packages/commonjs</I>).</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<H3 CLASS="western"><FONT COLOR="#666666"><FONT FACE="Montserrat">Publishing
+ES Modules</FONT></FONT></H3>
+<P STYLE="margin-bottom: 0cm; line-height: 0.5cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<FONT COLOR="#666666"><FONT FACE="Montserrat"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN STYLE="background: transparent">To
+make sure your ES modules are immediately usable by tools that work
+with CommonJS such as Node.js and webpack, you can use Rollup to
+compile to UMD or CommonJS format, and then point to that compiled
+version with the <I>`main`</I> property in your <I>`package.json`</I>
+file. If your <I>`package.json`</I> file also has a <I>`module`</I>
+field, ES-module-aware tools like Rollup and [webpack
+2+](<I>https://webpack.js.org/</I>) will [import the ES
+module](<I>https://github.com/rollup/rollup/wiki/pkg.module</I>)
+version directly.</SPAN></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<BR>
+</P>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
