@@ -1,0 +1,22 @@
+:root {
+  font-size: 62.5%;
+
+}
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+li {
+    font-size : 30px;
+}
+
+
+
+h1 {
+  font-size: 5.6rem;
+}
